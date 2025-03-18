@@ -191,7 +191,7 @@ function App() {
               >
                 <a href="https://chordify.onrender.com">
                   <img
-                    src="./src/assets/chordify.png"
+                    src="https://images-ezwm.onrender.com/chordify.png"
                     style={{ width: "100%", height: "100%" }}
                   />
                 </a>
@@ -207,7 +207,7 @@ function App() {
               >
                 <a href="https://whether-app-fxu2.onrender.com">
                   <img
-                    src="./src/assets/weather.png"
+                    src="https://images-ezwm.onrender.com/weather.png"
                     style={{ width: "100%", height: "100%" }}
                   />
                 </a>
