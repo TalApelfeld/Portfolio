@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "motion/react";
 import "./App.css";
+import cvPdf from "../public/assets/CV.pdf";
 
 function App() {
   const [IsActive, setIsActive] = useState(false);
@@ -179,7 +180,7 @@ function App() {
                 </a>
               </li>
               <li>
-                <a href="/" download="CV.pdf">
+                <a href={cvPdf} download="../public/assets/CV.pdf">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
