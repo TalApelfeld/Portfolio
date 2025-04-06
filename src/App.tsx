@@ -96,7 +96,16 @@ function App() {
 
       <main className="hero" id="about">
         <div className="img-div">
-          <img src="./assets/result.png" alt="self-img" />
+          <motion.img
+            src="./assets/result.png"
+            alt="self-img"
+            whileInView={{
+              opacity: [0, 1],
+              translateY: ["40px", 0],
+              transition: { duration: 1.5 },
+            }}
+            whileTap={{ scale: 0.95 }}
+          />
         </div>
 
         <div className="content">

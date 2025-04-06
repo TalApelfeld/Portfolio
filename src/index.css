@@ -311,6 +311,21 @@ body {
   border-radius: 10px;
 }
 
+@media (min-width: 500px) {
+  /* .chordify {
+    width: 230px;
+    height: 520px;
+  }
+  .weather {
+    width: 230px;
+    height: 520px;
+    } */
+
+  .projects {
+    width: 500px;
+    height: 520px;
+  }
+}
 /* .header {
   position: fixed;
   top: 0;
