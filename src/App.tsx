@@ -252,8 +252,7 @@ function App() {
               >
                 <a href="https://skiscanner.onrender.com/">
                   <img
-                    // src="https://images-ezwm.onrender.com/SkiScanner.png"
-                    src="../src/assets/SkiScanner2.png"
+                    src="https://images-ezwm.onrender.com/SkiScanner.png"
                     style={{ width: "100%", height: "100%" }}
                   />
                 </a>
