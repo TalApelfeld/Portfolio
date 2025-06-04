@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "motion/react";
 import "./App.css";
-import cvPdf from "../public/assets/CV.pdf";
+import cvPdf from "../src/assets/CV.pdf";
 
 function App() {
   const [IsActive, setIsActive] = useState(false);
@@ -237,6 +237,23 @@ function App() {
                 <a href="https://whether-app-fxu2.onrender.com">
                   <img
                     src="https://images-ezwm.onrender.com/weather.png"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                </a>
+              </motion.div>
+              <motion.div
+                className="weather"
+                whileInView={{
+                  opacity: [0, 1],
+                  translateY: ["40px", 0],
+                  transition: { duration: 1.5 },
+                }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <a href="https://skiscanner.onrender.com/">
+                  <img
+                    // src="https://images-ezwm.onrender.com/SkiScanner.png"
+                    src="../src/assets/SkiScanner2.png"
                     style={{ width: "100%", height: "100%" }}
                   />
                 </a>
