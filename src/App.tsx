@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "motion/react";
 import "./App.css";
-import cvPdf from "../src/assets/CV.pdf";
+import cvPdf from "../src/assets/Tal_CV.pdf";
 
 function App() {
   const [IsActive, setIsActive] = useState(false);
@@ -126,6 +126,7 @@ function App() {
             practical, high-quality software solutions.
           </p>
 
+          {/* Contact icons */}
           <div className="icons-container">
             <ul className="icons-list">
               <li>
@@ -203,6 +204,7 @@ function App() {
         </div>
       </main>
 
+      {/* Projects */}
       <section id="services">
         <div className="projects-container">
           <div className="projects">
