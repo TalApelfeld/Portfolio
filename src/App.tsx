@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "motion/react";
 import "./App.css";
-import cvPdf from "../src/assets/Tal_CV.pdf";
+import cvPdf from "../src/assets/Tal Apelfeld CV.pdf";
 
 function App() {
   const [IsActive, setIsActive] = useState(false);
@@ -38,12 +38,24 @@ function App() {
         <div className="nav-big-screen">
           <ul className="list">
             <li>
-              <Link to="about" spy={true} smooth={true} duration={500}>
+              <Link
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="text-white"
+              >
                 About
               </Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true} duration={500}>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="text-white"
+              >
                 Projects
               </Link>
             </li>
@@ -65,6 +77,7 @@ function App() {
         </svg>
       </div>
 
+      {/* Mobile Sidebar */}
       <nav className={`navbar ${IsActive ? "menu-on" : ""}`}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -73,22 +86,34 @@ function App() {
           width="30"
           height="30"
           viewBox="0 0 50 50"
-          fill="white"
           onClick={() => {
             handleMenuActive();
           }}
+          className="fill-white"
         >
           <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
         </svg>
 
         <ul className="list">
           <li>
-            <Link to="about" spy={true} smooth={true} duration={500}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link to="services" spy={true} smooth={true} duration={500}>
+            <Link
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="text-white"
+            >
               Projects
             </Link>
           </li>
@@ -131,6 +156,7 @@ function App() {
             <ul className="icons-list">
               <li>
                 <a href="https://github.com/TalApelfeld">
+                  {/* Github Icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -148,6 +174,7 @@ function App() {
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/tal-apelfeld/">
+                  {/* Linkdin Icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -165,6 +192,7 @@ function App() {
               </li>
               <li>
                 <a href="https://wa.me/+972504718882">
+                  {/* Whatsapp Icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -182,6 +210,7 @@ function App() {
               </li>
               <li>
                 <a href={cvPdf} download="../public/assets/CV.pdf">
+                  {/* CV icon */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
