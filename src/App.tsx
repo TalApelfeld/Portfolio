@@ -148,7 +148,10 @@ function App() {
             challenge my skills and allow me to contribute to all stages of the
             development process. My portfolio showcases a variety of projects
             that demonstrate my ability to transform complex requirements into
-            practical, high-quality software solutions.
+            practical, high-quality software solutions. Alongside my web
+            development work, I also use Python for automation, data processing,
+            and machine learning, allowing me to integrate intelligent features
+            and analytical capabilities into my projects.
           </p>
 
           {/* Contact icons */}
